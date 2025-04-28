@@ -1,0 +1,11 @@
+import os
+
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+TELEGRAM_CHANNEL_IDS = os.getenv("TELEGRAM_CHANNEL_IDS", "").split(",")
+
+DATABASE_FILE = "tokens.db"
+CHECK_INTERVAL = 300  # هر ۵ دقیقه
+MIN_MARKET_CAP = 50000
+MIN_VOLUME_24H = 75000
+MAX_AGE_MINUTES = 60
+TARGET_DEX = "uniswap"
