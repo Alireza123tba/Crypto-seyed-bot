@@ -32,5 +32,9 @@ def send_to_telegram(token):
                 bot.send_photo(chat_id=chat_id, photo=image_url, caption=message, parse_mode='Markdown')
             else:
                 bot.send_message(chat_id=chat_id, text=message, parse_mode='Markdown')
+try:
+    # برخی عملیات که ممکن است خطا ایجاد کنند
+    some_code()
 except Exception as e:
-            print(f"Error sending message: {e}")
+    # در صورت خطا
+    print(f"Error: {e}")
