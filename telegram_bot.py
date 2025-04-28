@@ -23,7 +23,7 @@ def send_to_telegram(token):
 "
         f"*Volume 24h:* ${vol:,.0f}
 "
-        f"[View Token]({url_link})"
+        f"[View Token]({url_link})"""
     )
 
     for chat_id in TELEGRAM_CHANNEL_IDS:
